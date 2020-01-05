@@ -1,6 +1,11 @@
 const process = {
   likes: function(names) {
-    return "no one likes this";
+    switch (names.length) {
+      case 0:
+        return "no one likes this";
+      case 1:
+        return names[0] + " likes this";
+    }
   }
 };
 
