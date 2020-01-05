@@ -17,3 +17,15 @@ test("if three names in list returns string notifying user of likes correctly", 
     "james, andy and tasha like this"
   );
 });
+
+test("if four names in list returns string notifying user of likes correctly", () => {
+  expect(process.likes(["james", "andy", "tasha", "hope"])).toBe(
+    "james, andy and 2 others like this"
+  );
+});
+
+test("if five names in list returns string notifying user of likes correctly", () => {
+  expect(process.likes(["james", "andy", "tasha", "hope", "john"])).toBe(
+    "james, andy and 3 others like this"
+  );
+});
