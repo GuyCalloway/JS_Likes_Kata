@@ -11,3 +11,9 @@ test("if one name in list returns string notifying user of likes", () => {
 test("if two names in list returns string notifying user of likes correctly", () => {
   expect(process.likes(["james", "andy"])).toBe("james and andy like this");
 });
+
+test("if three names in list returns string notifying user of likes correctly", () => {
+  expect(process.likes(["james", "andy", "tasha"])).toBe(
+    "james, andy and tasha like this"
+  );
+});
