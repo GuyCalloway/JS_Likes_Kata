@@ -10,7 +10,7 @@ const process = {
       case 3:
         return names[0] + ", " + names[1] + " and " + names[2] + " like this";
       default:
-        number = names.length - 2;
+        number = names.length - 2
         return (
           names[0] + ", " + names[1] + " and " + number + " others like this"
         );
